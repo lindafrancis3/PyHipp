@@ -54,9 +54,8 @@ with lock:
             # add code here
             clist.append(env)
         else:
-            to_remove = clist[0]
-            clist.remove(to_remove)
-            print(to_remove)
+            env = clist.pop(0)
+            print(env)
             # get and remove env from clist
             # add code here
             # return env name
